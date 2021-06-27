@@ -22,38 +22,107 @@
   </head>
   <body>
     <div class="container">
-      <h3>Calculator App</h3>
+      <h1>12th Marks Calculator App</h1>
     </div>
 
     <!-- Form -->
     <div class="container">
+      <h3>Enter Your 10th Marks<h3>
       <form action="/send" method="POST">
-        <label for="Number One">First Number</label>
+        <label for="10th Tamil">Tamil Marks</label>
         <input
           type="text"
-          placeholder="First Number"
+          placeholder="Enter your 10th Tamil Marks"
           class="u-full-width"
-          name="num1"
+          name="tenth_tamil"
         />
 
-        <label for="Number Two">Second Number</label>
+        <label for="10th English">English Marks</label>
         <input
           type="text"
-          placeholder="Second Number"
+          placeholder="Enter your 10th English Marks"
           class="u-full-width"
-          name="num2"
+          name="tenth_english"
         />
 
-        <label for="Operation">Operation</label>
-        <select class="u-full-width" name="operation">
-          <option value="add">Add</option>
-          <option value="subtract">Subtract</option>
-          <option value="multiply">Multiply</option>
-          <option value="divide">Divide</option>
-        </select>
+        <label for="10th Maths">Maths Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 10th Maths Marks"
+          class="u-full-width"
+          name="tenth_maths"
+        />
+
+        <label for="10th Science">Science Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 10th Science Marks"
+          class="u-full-width"
+          name="tenth_science"
+        />
+
+        <label for="10th Social">Social Science Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 10th Social Science Marks"
+          class="u-full-width"
+          name="tenth_social"
+        />
+
+        <h3>Enter Your 11th Marks<h3>
+
+        <label for="11th Tamil">Tamil Marks</label>
+         <input
+           type="text"
+           placeholder="Enter your 11th Tamil Marks"
+           class="u-full-width"
+           name="ele_tamil"
+        />
+
+        <label for="11th English">English Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 11th English Marks"
+          class="u-full-width"
+          name="ele_english"
+        />
+
+        <label for="11th Maths">Maths Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 11th Maths/Commerce/Anyother Marks"
+          class="u-full-width"
+          name="ele_maths"
+        />
+
+        <label for="11th Physics">Physics Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 11th Physics/Accountancy/Anyother Marks"
+          class="u-full-width"
+          name="ele_physics"
+        />
+
+        <label for="11th Chemistry">Chemistry Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 11th Chemistry/Businessmaths/Anyother Marks"
+          class="u-full-width"
+          name="ele_chemistry"
+        />
+
+        <label for="11th Cs">Computer Science Marks</label>
+        <input
+          type="text"
+          placeholder="Enter your 11th Computer Science/Biology/Anyother Marks"
+          class="u-full-width"
+          name="ele_cs"
+        />
 
         <input type="submit" value="Calculate" id="calc_btn" />
         <br />
+
+        <h3> Your 12th Marks is: <h3>
         <div class="alert">
           {{ sum }}
         </div>
